@@ -2,9 +2,9 @@ var a;
 var b;
 var value;
 
-var a = prompt('Podaj wartość a');
-var b = prompt('Podaj wartość b');
-var value = (a*a) + (2 * a * b) - (b*b);
+a = prompt('Podaj wartość a');
+b = prompt('Podaj wartość b');
+value = (a*a) + (2 * a * b) - (b*b);
 
 if (value > 0) {
 	console.log('Wynik jest dodatni = ' + value);

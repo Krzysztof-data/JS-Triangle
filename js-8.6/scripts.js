@@ -1,7 +1,7 @@
 // Functions
 
 var a = 4;
-    h = 5;
+var h = 5;
 
 function getTriangleArea(a, h) {
     if ((a <= 0) || (h <= 0)) {
