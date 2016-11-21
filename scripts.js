@@ -1,3 +1,14 @@
-var name = prompt('Wpisz swoje imię'); 
-alert('Witaj, ' + name); 
-console.log('Witaj, ' + name);
+var url = ('https://api.icndb.com/jokes/random');
+var paragraph = document.getElementById('joke');
+var button = document.getElementById('get-joke');
+button.addEventListener('click', function(){
+	var xhr = new XMLHttpRequest();
+  xhr.open('GET', url);
+  xhr.addEventListener('load', function(){
+    var response = JSON.parse(xhr.response);
+    paragraph.innerHTML = response.value.joke;
+  });
+  xhr.send();
+});
+ 
+
