@@ -1,11 +1,13 @@
-function rysujChoinkę(n) {
-  for (var i = 0; i < n; i++) {
-      var star = ' '; 
-      for (var s = 0; s < i * 2 - 1; s++){ 
-           star += '*';
+function rysujChoinkę(j) {
+  for(i = 1; i <= j; i++) {
+    var star = '';
+    for(n = 0; (i * 2 - 1) > n; n++) {
+      star += '*';
       }
-         console.log(star);
-  }
+  for(s = j; s - i >= 1;  s--) {
+    star = ' '  + star;
+        }
+    console.log(star);
+    }
 }
-
 rysujChoinkę(5);
