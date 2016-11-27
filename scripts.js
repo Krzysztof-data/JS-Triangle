@@ -11,3 +11,4 @@ function rysujChoinkę(j) {
     }
 }
 rysujChoinkę(5);
+
