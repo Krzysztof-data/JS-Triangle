@@ -3,6 +3,6 @@ var list = document.getElementById('Lista'),
 	itemsByTagName = document.getElementsByTagName('li');
 
 add.addEventListener('click', function() {
-	list.innerHTML += '<li>item</li>' + itemsByTagName.length
+	list.innerHTML += '<li>item ' + itemsByTagName.length + '</li>'
 });
 
