@@ -1,3 +1,12 @@
 body {
-	background-color: #C0F0FF;
+  background-color: #b3d7fc;
+}
+.container {
+  padding: 20px;
+}
+.label-default, .label-info, .label-danger {
+  margin: 5px;
+}
+#js-gameResult {
+    text-align: center;
 }
