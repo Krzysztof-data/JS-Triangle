@@ -1,3 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body {
-	background-color: #CFE0FF;
+  margin: 0;
+  background-color: #57bacc;
+  font-family: 'Roboto', sans-serif;
 }
+* {
+  box-sizing: border-box;
+}
+h1, h2 {
+  text-align: center;
+}
+.create-column {
+  height: 30px;
+  width: 130px;
+  margin: 20px;
+  background-color: #419400;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.ui-sortable {
+  min-height: 80px;
+}
+.btn-delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  border: 0;
+  background-color: rgba(0,0,0,0.4);
+  color: #ffffff;
+}
+.card-delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  border: 0;
+  background-color: rgba(0,0,0,0.4);
+  color: #ffffff;
+}
+.board h1 {
+  margin-left: 8px;
+}
+.column-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.column {
+  order: 1;
+  min-width: 300px;
+  min-height: 50vh;
+  background-color: #dfe1e2;
+  margin-left: 8px;
+  list-style: none;
+  position: relative;
+}
+.column-add-card {
+  cursor: pointer;
+  text-decoration: underline;
+  margin: 5px 8px;
+  display: block;
+  background-color: #a34f4f;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.card {
+  box-sizing: border-box;
+  display: block;
+  height: 60px;
+  margin-bottom: 5px;
+  padding: 4px;
+  overflow: hidden;
+  position: relative;
+  background-color: #ede86e;
+}
+.card-list {
+  list-style: none;
+  margin: 5px;
+  padding: 0px;
+}
+.card-description {
+  margin: 2px 0;
+}
+.card-placeholder {
+  box-sizing: border-box;
+  display: block;
+  height: 60px;
+  margin-bottom: 5px;
+  border: 2px solid #aeafad;
+  background-color: #abcfff;
+}
+
